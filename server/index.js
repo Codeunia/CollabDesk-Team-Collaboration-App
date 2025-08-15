@@ -17,7 +17,9 @@ import chatRoute from './routes/chat.route.js'
 
 app.use(cors({
     credentials: true,
-    origin: process.env.FRONTENT_URL
+    origin: process.env.FRONTENT_URL,
+    methods: ["GET", "POST", "PUT", "DELETE", "OPTIONS"],
+    allowedHeaders: ["Content-Type", "Authorization"]
 }))
 
 app.use(express.json())
@@ -35,10 +37,10 @@ app.get("/", (req, res) => {
 })
 
 // other api
-app.use("/api/user",userRoute)
-app.use("/api/teaming",teamRouter)
-app.use("/api/task",taskRoute)
-app.use("/api/chat",chatRoute)
+app.use("/api/user", userRoute)
+app.use("/api/teaming", teamRouter)
+app.use("/api/task", taskRoute)
+app.use("/api/chat", chatRoute)
 
 const PORT = 8080 || process.env.PORT
 
