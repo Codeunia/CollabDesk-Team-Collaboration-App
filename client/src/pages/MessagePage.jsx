@@ -227,7 +227,7 @@ const MessagePage = () => {
 
 
     return (
-        <section className='max-h-[calc(100vh-60px)] w-full overflow-hidden relative'>
+        <section className='h-[calc(100vh-60px)] w-full overflow-hidden relative'>
 
             <div className='bg-[#21222b] fixed top-0 z-50 pt-[13px] pb-[13px] px-4 grid grid-cols-[300px_1fr] w-full items-center text-white shadow-md shadow-[#57575765]'>
 
@@ -257,7 +257,7 @@ const MessagePage = () => {
             </div>
 
 
-            <div className='h-full overflow-y-scroll px-2.5 flex flex-col gap-2.5 py-4 chat-scrollbar relative' style={{ willChange: 'transform' }}>
+            <div className='h-full mb-[55px] pt-[140px] overflow-y-scroll px-2.5 flex flex-col gap-2.5 py-4 chat-scrollbar relative' style={{ willChange: 'transform' }}>
                 {
                     Array.isArray(messages) && messages.map((value, index) => {
 
