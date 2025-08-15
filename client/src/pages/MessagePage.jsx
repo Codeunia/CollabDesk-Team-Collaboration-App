@@ -227,7 +227,7 @@ const MessagePage = () => {
 
 
     return (
-        <section className='h-[calc(100vh-60px)] w-full overflow-hidden relative'>
+        <section className='max-h-[calc(100vh-60px)] w-full overflow-hidden relative'>
 
             <div className='bg-[#21222b] fixed top-0 z-50 pt-[13px] pb-[13px] px-4 grid grid-cols-[300px_1fr] w-full items-center text-white shadow-md shadow-[#57575765]'>
 
