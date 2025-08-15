@@ -319,7 +319,7 @@ const MessagePage = () => {
             </div>
 
 
-            <div className='bg-[#1f2029] py-3 w-full rounded-t-md grid grid-cols-[100px_1fr_100px] items-center text-white shadow-md shadow-[#154174]'>
+            <div className='bg-[#1f2029] fixed bottom-0 py-3 w-full rounded-t-md grid grid-cols-[100px_1fr_100px] items-center text-white shadow-md shadow-[#154174]'>
 
                 <div className='flex items-center justify-center relative'>
                     <MdAttachment size={29} onClick={() => setOpenAttach(true)} className='cursor-pointer' />
